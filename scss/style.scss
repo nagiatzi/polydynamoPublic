@@ -1,0 +1,702 @@
+/*
+Table of contents
+----------------
+1)Navbar-styles
+2)1st part Basic Slogan styles
+3)Section About
+4)Section teleferic quote
+5)Thubnail-part-styles
+6)Section teleferic image info
+7)Services-styles
+9)Form-Styles
+10)Footer-styles
+11)Animation
+12)Mediaq
+*/
+
+//colors
+$primaryGreen: rgb(61, 135, 63);
+$secondaryGreen: rgb(66, 146, 68);
+$lightGreen: rgba(63, 191, 63, 0.1);
+$lightDark: rgba(63,72,75,0.3);
+//shadows
+$light-overlay: rgba(0, 0, 0, 0.3);
+$dark-overlay: rgba(0,0,0,0.7);
+$shadow: (1px 1px 2px $dark-overlay);
+//fonts
+$latoFont: ('Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif);
+$raleFont: ('Raleway', sans-serif);
+
+@import url('https://fonts.googleapis.com/css?family=Delius');
+@import url('https://fonts.googleapis.com/css?family=Amita');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+/* Genrall styles styles--------------------------------------------------------
+----------------------------------------------------------------------------- */
+body {
+  font-family: $raleFont;
+}
+h2 {
+  font-family: $raleFont;
+  font-style: normal;
+  font-weight: 600;
+  color: #777;
+  text-shadow: $shadow;
+}
+/* 1)Navbar-styles----------------------------------------------------------------
+----------------------------------------------------------------------------- */
+#mainNav {
+  background-color: rgba(63,72,75,0.3);
+  padding: 0;
+    img {
+      transition: all ease-in 0.5s;
+      &:hover {
+        width: 80px!important;
+        height: 80px!important;
+      }
+  } //img
+} //#mainNav
+
+.navbar-nav {
+    .nav-item {
+      font-size:1.5rem;
+      padding-right:15px;
+    }
+    .nav-link {
+      color: white;
+      text-shadow: $shadow;
+      font-size: 1.5rem;
+      transition: all linear 0.2s;
+      &:hover {
+        background-color: $lightDark;
+      } //:hover
+   } //.nav-link
+} //.navbar-nav
+
+// . mainBack class is defined so the background is going to be lighter on windowOnScroll
+.mainBack {
+    background-color: $lightDark;
+}
+
+/* 2)1st part Basic Slogan styles-------------------------------------------------
+----------------------------------------------------------------------------- */
+#basicSlogan {
+  background:url('../img/temp2.jpg') no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  min-height:750px;
+  position:relative;
+      .primary-overlay {
+        background:$light-overlay;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      } //.primary overlay
+      .slider-text {
+        color: #fff;
+        padding: 12rem 0;
+        margin-left: 3.5rem;
+          h2.h2banner {
+              font-family: $latoFont;
+                font-size: 5.5rem;
+                font-weight: 700;
+                line-height:5.5rem;
+                border: 1px solid #fff;
+                padding: 0.5rem;
+                max-width: 670px;
+                margin: 0 auto;
+                color: #fff;
+                  span{
+                    color: $primaryGreen;
+                  }
+         }  /*/h2*/
+        p {
+          text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+          letter-spacing: 3px;
+          font-size:  2rem;
+          font-weight: 900;
+          margin-top: 1rem;
+          line-height:2rem;
+        }
+      } /*.slider-text*/
+} /*basic Slogan end*/
+
+#smallButton {
+  border: 1px solid white;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* 3)Section About----------------------------------------------------------------
+----------------------------------------------------------------------------- */
+#about {
+  background-color: white;
+  box-shadow: -5.5px 9.5px 35px 0px $lightGreen;
+  min-height: 450px;
+      h2 {
+        margin: 0.5rem;
+      }
+      .row {
+        margin-top: 3rem;
+      }
+      p {
+        padding: 0.5rem;
+      }
+} //#about
+
+/* 4)Section teleferic quote----------------------------------------------------
+----------------------------------------------------------------------------- */
+#telef {
+    color:#fff;
+    background:url('../img/telef.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    position:relative;
+    min-height:350px;
+    text-align:center;
+        .secondOverlay {
+          background-color:$dark-overlay;
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+        } //.secondOverlay
+        p {
+          font-size: 1.5rem;
+          font-family: 'Playfair Display', serif;
+          text-shadow: $shadow;
+          margin-top: 8rem;
+        }
+ } //#telef
+
+/* 5)Thubnail-part-styles----------------------------------------------------------------
+----------------------------------------------------------------------------- */
+#facilities {
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      color: #777;
+      margin-top: 1rem 0;
+    }
+    p {
+      padding-bottom: 1rem;
+    }
+    .thumbnail {
+          box-shadow: inset 0 0 5px #000000;
+          img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0.8rem;
+          } //img
+    } //.thumbnail
+}//#facilities
+
+/* 6)Section teleferic image info----------------------------------------------
+----------------------------------------------------------------------------- */
+#tel2 {
+    color:#fff;
+    background:url('../img/tria.jpeg');
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    position:relative;
+    min-height:350px;
+    text-align:center;
+        .secondOverlay {
+          background-color:$dark-overlay;
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+        } //.secondOverlay
+        p {
+          font-size: 1.5rem;
+          font-family: 'Playfair Display', serif;
+          text-shadow: $shadow;
+          margin-top: 8rem;
+        }
+} //tel2
+
+/* 7)Services-styles--------------------------------------------------------------
+----------------------------------------------------------------------------- */
+#services {
+  color: #fff;
+  background-color: $primaryGreen;
+    h2 {
+        color: inherit;
+        padding: 1.5rem 0;
+    }
+    h3 {
+        color: inherit;
+    }
+    .icon {
+      font-size: 2.7rem;
+      margin-bottom: 20px;
+    }
+    .item {
+      padding: 50px 30px;
+      transition: all 0.3s;
+      cursor: default;
+        &:hover {
+          background: #3d873f;
+          box-shadow: -5.5px 9.5px 35px 0px rgba(0, 0, 0, 0.2);
+        }
+        p {
+          font-weight: 300;
+          margin: 20px 0;
+          text-align: center;
+        }
+   } /*end of item--------------------------------------------*/
+} /*end of #serivices--------------------------------------------*/
+
+/* --8)Activities----------------------------------------------------------------
+----------------------------------------------------------------------------- */
+#activities {
+    h2 {
+      margin: 2rem;
+    }
+    h4 {
+      color: #777;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .flip {
+      perspective:800px;
+    }
+
+    .activitieGroup {
+      display: block;
+      position: relative;
+      padding: 0;
+      width: 640px;
+      height:480px;
+
+          .actToFLip {
+            display: block;
+            height: 100%;
+            width: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+              &:hover {
+                transform: rotateY(-180deg);
+              }
+          } //actToFLip end
+          img {
+            backface-visibility: hidden;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+          .details {
+            backface-visibility: hidden;
+            border: 3px double $primaryGreen;
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            transform: rotateY(-180deg); //on hover .details div with text comes to the front side
+              p {
+                color: $primaryGreen;
+                margin-top: 6rem;
+                font-style:normal;
+                  span {
+                    font-size: 0.8em;
+                    font-style: italic;
+                  }
+              } //p
+          } /*details  end-------------------------------------------*/
+  } /*activitieGroup end end-------------------------------------------*/
+} /*activities end-------------------------------------------*/
+img.smallBanner {
+  width: 60px!important;
+  height: 60px!important;
+  left: 45%;
+}
+// 9)Form-Styles--------------------------------------------------------------
+//-----------------------------------------------------------------------------
+
+#formIntro {
+  h2 {
+    margin: 2rem;
+  }
+  h4 {
+    color: #777;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+} //formIntro end
+
+#outerForm {
+  background:url('../img/imgForm1.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+
+#contactForm {
+  padding: 2rem;
+  height: 40vh;
+    p {
+      color: white;
+      text-shadow: $shadow;
+      font-weight: 500;
+    }
+} //#contactForm
+
+// 10)Footer-styles-------------------------------------------------------------
+//---------------------------------------------------------------------------------
+#footer p {
+  color: #eeeeee;
+  margin: 0;
+} //#footer
+
+#footer {
+  background: #222222;
+  font-size: 1rem;
+  line-height: 50px;
+    p.social {
+      text-align: left;
+      padding-top: 2rem;
+      a {
+        border: 1px solid $primaryGreen;
+        border-radius: 20px;
+        color: #fff;
+        display: inline-block;
+        line-height: 44px;
+        margin-left: 10px;
+        vertical-align: middle;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        font-size: 1.5rem;
+    } //a
+  } //p.social
+} //footer end
+
+.footIcon {
+  background-color: #222222;
+}
+
+#template {
+  color: #999999;
+  margin: 1.2rem;
+  font-size: 1rem;
+    a {
+        color: #999999;
+    }
+} //#template
+
+.social2 {
+  padding-top: 2rem;
+  text-align: right;
+} //.socail2
+
+// 11)Animation-----------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+/* slidedown is the first class applied and change throught jquery windowOnScroll event to .slide */
+.slidedown {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    animation-duration: 1s;
+    visibility: visible;
+} //.slide
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/*  ************************************************************************* */
+/* 12)Mediaq--------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+@media (max-width: 1450px) {
+  #activities {
+    .activitieGroup {
+      width: 440px;
+      height: 390px; // *magic number because of my images -.-
+    }
+  } // #activities
+} //1450
+
+@media (max-width: 1190px) {
+  #activities {
+    .activitieGroup {
+      width: 440px;
+      height: 360px;
+    }
+  } // #activities
+} //1190
+
+@media (max-width: 985px) {
+  #mainNav{
+      background-color: $lightDark;
+    }
+
+  #basicSlogan{
+    .slider-text {
+      margin-left:0px;
+        h2.h2banner {
+            font-size: 4.5rem;
+            max-width:530px;
+        }
+        p {
+          font-size: 2rem;
+        }
+    }//.slider-text
+  }//basicSlogan end
+
+  #about {
+    min-height: 250px;
+      h2 {
+        margin: 0.2rem;
+        font-size: 2rem;
+      }
+      .row {
+        margin-top: 1.5rem;
+      }
+      p {
+        padding: 0.5rem;
+      }
+  }//about end
+
+  #telef, #tel2{
+      p {
+        margin-top: 5rem;
+      }
+  } //#telef, #tel2
+
+  #facilities {
+    padding-top: 1rem !important;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      h4 {
+        color: #777;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.7rem;
+        padding-bottom: 0.5rem;
+      }
+  }//facilities end
+
+  #activities {
+      h2 {
+        margin: 1.5rem;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+      }
+  } //#activities
+
+  #formIntro {
+      h2 {
+        margin: 1.5rem;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+     }
+  } //#formIntro
+
+  #contactForm {
+    padding: 0.7rem;
+    height: 30vh;
+  }//#contactForm
+
+} /*end mediaq- 985-------------------------------------------------------------
+------------------------------------------------------------------------------*/
+@media (max-width: 780px) {
+  #basicSlogan {
+    background-attachment: scroll;
+  }
+
+  #activities {
+    .activitieGroup {
+      width:440px;
+      height: 300px;
+    }
+  } //#activities
+
+  #footer {
+    p.social, p.social2 {
+     text-align: center;
+     margin-bottom: 20px;
+    }
+  } //#footer
+
+} //end 780
+
+@media (max-width: 580px) {
+  #activities {
+    .activitieGroup {
+      width:560px;
+      height: 360px;
+    }
+  } //#activities
+
+  #basicSlogan {
+    min-height: 45vh;
+    .slider-text {
+        padding: 10rem 0;
+        h2.h2banner {
+          font-size: 3rem;
+          max-width:400px;
+          line-height: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+     } //.slider-text
+  }//basic slogan end
+
+  #contactForm {
+    height: 57vh!important;
+  }
+
+}//mq 580 end
+
+@media (max-width: 350px) {
+  #activities {
+    .activitieGroup {
+      width:560px;
+      height: 300px;
+    }
+  } // #activities
+} //end of 350mq
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.2rem;
+    text-shadow: none;
+  }
+
+  #mainNav {
+    background-color: $lightDark;
+  }
+
+  #basicSlogan {
+     min-height: 40vh;
+    .slider-text {
+        padding: 7rem 0;
+        h2.h2banner {
+          font-size: 2rem;
+          max-width:400px;
+          line-height: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+    }//slider-text end
+  }//basicSlogan end
+
+ a.nav-link {
+   font-size: 1.3rem !important;
+ }
+
+   #about {
+     padding: 1rem!important;
+     h2 {
+      margin: 0.2rem;
+      font-size: 1.2rem;
+     }
+     .row {
+      margin-top: 1.5rem;
+     }
+      p {
+      padding: 0.2rem;
+      font-size: 1rem;
+     }
+   } //about end
+
+   #telef, #tel2 {
+     p {
+       font-size: 1.2rem;
+       margin-top: 1.5rem;
+       margin-bottom: 0.5rem;
+    } //p
+  } //telef end
+
+    #facilities {
+        margin-top: 0.5rem!important;
+        padding: 1rem !important;
+        h2 {
+          margin-bottom: 0.5rem;
+        }
+        h4 {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+          color: #777;
+        }
+        p {
+          font-size: 0.8rem;
+          padding-bottom: 0.5rem;
+        }
+  }//facilities end
+
+    #services {
+      h2 {
+        padding: 1rem;
+      }
+      p.lead {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    } //services end
+
+  #activities {
+      h2 {
+        margin: 1rem;
+      }
+      h4 {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+      }
+      img.smallBanner {
+        left: 40%;
+      }
+  }//activities end
+
+  #formIntro {
+      h2 {
+        margin: 1rem;
+      }
+      h4 {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+      }
+  }//formIntro end
+
+  #contactForm {
+     padding: 0.5rem;
+     height: 57vh;
+     p {
+       font-size: 0.8em;
+    }
+  }//contactForm end
+
+  #footer {
+    line-height: 1rem;
+  }
+
+}/*end mediaq- 400- small screens------------------------------------------------
+------------------------------------------------------------------------------*/
