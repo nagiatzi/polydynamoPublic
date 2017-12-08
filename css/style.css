@@ -278,8 +278,7 @@ img.smallBanner {
   background-repeat: no-repeat; }
 
 #contactForm {
-  padding: 2rem;
-  height: 40vh; }
+  padding: 2rem; }
   #contactForm p {
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
@@ -399,8 +398,7 @@ img.smallBanner {
     margin-bottom: 1.5rem;
     font-size: 1rem; }
   #contactForm {
-    padding: 0.7rem;
-    height: 30vh; } }
+    padding: 0.7rem; } }
 
 /*end mediaq- 985-------------------------------------------------------------
 ------------------------------------------------------------------------------*/
@@ -427,9 +425,7 @@ img.smallBanner {
         max-width: 400px;
         line-height: 4rem; }
       #basicSlogan .slider-text p {
-        font-size: 1.5rem; }
-  #contactForm {
-    height: 57vh !important; } }
+        font-size: 1.5rem; } }
 
 @media (max-width: 350px) {
   #activities .activitieGroup {
@@ -500,8 +496,7 @@ img.smallBanner {
     margin-bottom: 0.8rem;
     font-size: 1rem; }
   #contactForm {
-    padding: 0.5rem;
-    height: 57vh; }
+    padding: 0.5rem; }
     #contactForm p {
       font-size: 0.8em; }
   #footer {
