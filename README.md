@@ -1,5 +1,5 @@
 # Description
-Aiming to enhance my jquery and css3 skills, i opted for a single web-page which would not use as many movement plugins as the previous project. So in the "Polydynamo "web page, more css animations, transitions and jquery code, are being used delivering a single landing page for a virtual school  located in a beautiful forest area near Komotini.
+Aiming to enhance my jquery and css3 skills, i opted for a single [web-page](https://nagiatzi.github.io/polydynamoPublic/) which would not use as many movement plugins as the previous project. So in the "Polydynamo "web page, more css animations, transitions and jquery code, are being used delivering a single landing page for a virtual school  located in a beautiful forest area near Komotini.
 
 # Credits:
 
