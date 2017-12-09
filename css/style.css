@@ -1,506 +1,131 @@
-/*
-Table of contents
-----------------
-1)Navbar-styles
-2)1st part Basic Slogan styles
-3)Section About
-4)Section teleferic quote
-5)Thubnail-part-styles
-6)Section teleferic image info
-7)Services-styles
-9)Form-Styles
-10)Footer-styles
-11)Animation
-12)Mediaq
-*/
-@import url("https://fonts.googleapis.com/css?family=Delius");
-@import url("https://fonts.googleapis.com/css?family=Amita");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
-/* Genrall styles styles--------------------------------------------------------
------------------------------------------------------------------------------ */
-body {
-  font-family: "Raleway", sans-serif; }
-
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: #777;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); }
-
-/* 1)Navbar-styles----------------------------------------------------------------
------------------------------------------------------------------------------ */
-#mainNav {
-  background-color: rgba(63, 72, 75, 0.3);
-  padding: 0; }
-  #mainNav img {
-    transition: all ease-in 0.5s; }
-    #mainNav img:hover {
-      width: 80px !important;
-      height: 80px !important; }
-
-.navbar-nav .nav-item {
-  font-size: 1.5rem;
-  padding-right: 15px; }
-
-.navbar-nav .nav-link {
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  font-size: 1.5rem;
-  transition: all linear 0.2s; }
-  .navbar-nav .nav-link:hover {
-    background-color: rgba(63, 72, 75, 0.3); }
-
-.mainBack {
-  background-color: rgba(63, 72, 75, 0.3); }
-
-/* 2)1st part Basic Slogan styles-------------------------------------------------
------------------------------------------------------------------------------ */
-#basicSlogan {
-  background: url("../img/temp2.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 750px;
-  position: relative;
-  /*.slider-text*/ }
-  #basicSlogan .primary-overlay {
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #basicSlogan .slider-text {
-    color: #fff;
-    padding: 12rem 0;
-    margin-left: 3.5rem;
-    /*/h2*/ }
-    #basicSlogan .slider-text h2.h2banner {
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 5.5rem;
-      font-weight: 700;
-      line-height: 5.5rem;
-      border: 1px solid #fff;
-      padding: 0.5rem;
-      max-width: 670px;
-      margin: 0 auto;
-      color: #fff; }
-      #basicSlogan .slider-text h2.h2banner span {
-        color: #3d873f; }
-    #basicSlogan .slider-text p {
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
-      letter-spacing: 3px;
-      font-size: 2rem;
-      font-weight: 900;
-      margin-top: 1rem;
-      line-height: 2rem; }
-
-/*basic Slogan end*/
-#smallButton {
-  border: 1px solid white;
-  color: white;
-  font-size: 1.5em; }
-
-/* 3)Section About----------------------------------------------------------------
------------------------------------------------------------------------------ */
-#about {
-  background-color: white;
-  box-shadow: -5.5px 9.5px 35px 0px rgba(63, 191, 63, 0.1);
-  min-height: 450px; }
-  #about h2 {
-    margin: 0.5rem; }
-  #about .row {
-    margin-top: 3rem; }
-  #about p {
-    padding: 0.5rem; }
-
-/* 4)Section teleferic quote----------------------------------------------------
------------------------------------------------------------------------------ */
-#telef {
-  color: #fff;
-  background: url("../img/telef.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 350px;
-  text-align: center; }
-  #telef .secondOverlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #telef p {
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    margin-top: 8rem; }
-
-/* 5)Thubnail-part-styles----------------------------------------------------------------
------------------------------------------------------------------------------ */
-#facilities h2 {
-  margin-bottom: 1.5rem; }
-
-#facilities h4 {
-  color: #777;
-  margin-top: 1rem 0; }
-
-#facilities p {
-  padding-bottom: 1rem; }
-
-#facilities .thumbnail {
-  box-shadow: inset 0 0 5px #000000; }
-  #facilities .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0.8rem; }
-
-/* 6)Section teleferic image info----------------------------------------------
------------------------------------------------------------------------------ */
-#tel2 {
-  color: #fff;
-  background: url("../img/tria.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 350px;
-  text-align: center; }
-  #tel2 .secondOverlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #tel2 p {
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    margin-top: 8rem; }
-
-/* 7)Services-styles--------------------------------------------------------------
------------------------------------------------------------------------------ */
-#services {
-  color: #fff;
-  background-color: #3d873f;
-  /*end of item--------------------------------------------*/ }
-  #services h2 {
-    color: inherit;
-    padding: 1.5rem 0; }
-  #services h3 {
-    color: inherit; }
-  #services .icon {
-    font-size: 2.7rem;
-    margin-bottom: 20px; }
-  #services .item {
-    padding: 50px 30px;
-    transition: all 0.3s;
-    cursor: default; }
-    #services .item:hover {
-      background: #3d873f;
-      box-shadow: -5.5px 9.5px 35px 0px rgba(0, 0, 0, 0.2); }
-    #services .item p {
-      font-weight: 300;
-      margin: 20px 0;
-      text-align: center; }
-
-/*end of #serivices--------------------------------------------*/
-/* --8)Activities----------------------------------------------------------------
------------------------------------------------------------------------------ */
-#activities {
-  /*activitieGroup end end-------------------------------------------*/ }
-  #activities h2 {
-    margin: 2rem; }
-  #activities h4 {
-    color: #777;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem; }
-  #activities .flip {
-    perspective: 800px; }
-  #activities .activitieGroup {
-    display: block;
-    position: relative;
-    padding: 0;
-    width: 640px;
-    height: 480px;
-    /*details  end-------------------------------------------*/ }
-    #activities .activitieGroup .actToFLip {
-      display: block;
-      height: 100%;
-      width: 100%;
-      transition: transform 1s;
-      transform-style: preserve-3d; }
-      #activities .activitieGroup .actToFLip:hover {
-        transform: rotateY(-180deg); }
-    #activities .activitieGroup img {
-      backface-visibility: hidden;
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-    #activities .activitieGroup .details {
-      backface-visibility: hidden;
-      border: 3px double #3d873f;
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      transform: rotateY(-180deg); }
-      #activities .activitieGroup .details p {
-        color: #3d873f;
-        margin-top: 6rem;
-        font-style: normal; }
-        #activities .activitieGroup .details p span {
-          font-size: 0.8em;
-          font-style: italic; }
-
-/*activities end-------------------------------------------*/
-img.smallBanner {
-  width: 60px !important;
-  height: 60px !important;
-  left: 45%; }
-
-#formIntro h2 {
-  margin: 2rem; }
-
-#formIntro h4 {
-  color: #777;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem; }
-
-#outerForm {
-  background: url("../img/imgForm1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
-
-#contactForm {
-  padding: 2rem; }
-  #contactForm p {
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    font-weight: 500; }
-
-#footer p {
-  color: #eeeeee;
-  margin: 0; }
-
-#footer {
-  background: #222222;
-  font-size: 1rem;
-  line-height: 50px; }
-  #footer p.social {
-    text-align: left;
-    padding-top: 2rem; }
-    #footer p.social a {
-      border: 1px solid #3d873f;
-      border-radius: 20px;
-      color: #fff;
-      display: inline-block;
-      line-height: 44px;
-      margin-left: 10px;
-      vertical-align: middle;
-      height: 45px;
-      width: 45px;
-      text-align: center;
-      font-size: 1.5rem; }
-
-.footIcon {
-  background-color: #222222; }
-
-#template {
-  color: #999999;
-  margin: 1.2rem;
-  font-size: 1rem; }
-  #template a {
-    color: #999999; }
-
-.social2 {
-  padding-top: 2rem;
-  text-align: right; }
-
-/* slidedown is the first class applied and change throught jquery windowOnScroll event to .slide */
-.slidedown {
-  visibility: hidden; }
-
-.slide {
-  /* The name of the animation */
-  animation-name: slide;
-  animation-duration: 1s;
-  visibility: visible; }
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%); }
-  100% {
-    opacity: 1;
-    transform: translateY(0%); } }
-
-/*  ************************************************************************* */
-/* 12)Mediaq--------------------------------------------------------------------
------------------------------------------------------------------------------ */
-@media (max-width: 1450px) {
-  #activities .activitieGroup {
-    width: 440px;
-    height: 390px; } }
-
-@media (max-width: 1190px) {
-  #activities .activitieGroup {
-    width: 440px;
-    height: 360px; } }
-
-@media (max-width: 985px) {
-  #mainNav {
-    background-color: rgba(63, 72, 75, 0.3); }
-  #basicSlogan .slider-text {
-    margin-left: 0px; }
-    #basicSlogan .slider-text h2.h2banner {
-      font-size: 4.5rem;
-      max-width: 530px; }
-    #basicSlogan .slider-text p {
-      font-size: 2rem; }
-  #about {
-    min-height: 250px; }
-    #about h2 {
-      margin: 0.2rem;
-      font-size: 2rem; }
-    #about .row {
-      margin-top: 1.5rem; }
-    #about p {
-      padding: 0.5rem; }
-  #telef p, #tel2 p {
-    margin-top: 5rem; }
-  #facilities {
-    padding-top: 1rem !important; }
-    #facilities h2 {
-      margin-bottom: 1rem; }
-    #facilities h4 {
-      color: #777;
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem;
-      font-size: 1.5rem; }
-    #facilities p {
-      font-size: 0.7rem;
-      padding-bottom: 0.5rem; }
-  #activities h2 {
-    margin: 1.5rem; }
-  #activities h4 {
-    margin-bottom: 1.5rem;
-    font-size: 1rem; }
-  #formIntro h2 {
-    margin: 1.5rem; }
-  #formIntro h4 {
-    margin-bottom: 1.5rem;
-    font-size: 1rem; }
-  #contactForm {
-    padding: 0.7rem; } }
-
-/*end mediaq- 985-------------------------------------------------------------
-------------------------------------------------------------------------------*/
-@media (max-width: 780px) {
-  #basicSlogan {
-    background-attachment: scroll; }
-  #activities .activitieGroup {
-    width: 440px;
-    height: 300px; }
-  #footer p.social, #footer p.social2 {
-    text-align: center;
-    margin-bottom: 20px; } }
-
-@media (max-width: 580px) {
-  #activities .activitieGroup {
-    width: 560px;
-    height: 360px; }
-  #basicSlogan {
-    min-height: 45vh; }
-    #basicSlogan .slider-text {
-      padding: 10rem 0; }
-      #basicSlogan .slider-text h2.h2banner {
-        font-size: 3rem;
-        max-width: 400px;
-        line-height: 4rem; }
-      #basicSlogan .slider-text p {
-        font-size: 1.5rem; } }
-
-@media (max-width: 350px) {
-  #activities .activitieGroup {
-    width: 560px;
-    height: 300px; } }
-
-@media (max-width: 400px) {
-  h2 {
-    font-size: 1.2rem;
-    text-shadow: none; }
-  #mainNav {
-    background-color: rgba(63, 72, 75, 0.3); }
-  #basicSlogan {
-    min-height: 40vh; }
-    #basicSlogan .slider-text {
-      padding: 7rem 0; }
-      #basicSlogan .slider-text h2.h2banner {
-        font-size: 2rem;
-        max-width: 400px;
-        line-height: 3rem; }
-      #basicSlogan .slider-text p {
-        font-size: 1.2rem; }
-  a.nav-link {
-    font-size: 1.3rem !important; }
-  #about {
-    padding: 1rem !important; }
-    #about h2 {
-      margin: 0.2rem;
-      font-size: 1.2rem; }
-    #about .row {
-      margin-top: 1.5rem; }
-    #about p {
-      padding: 0.2rem;
-      font-size: 1rem; }
-  #telef p, #tel2 p {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem; }
-  #facilities {
-    margin-top: 0.5rem !important;
-    padding: 1rem !important; }
-    #facilities h2 {
-      margin-bottom: 0.5rem; }
-    #facilities h4 {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      color: #777; }
-    #facilities p {
-      font-size: 0.8rem;
-      padding-bottom: 0.5rem; }
-  #services h2 {
-    padding: 1rem; }
-  #services p.lead {
-    font-size: 1rem; }
-  #services h3 {
-    font-size: 1.2rem; }
-  #activities h2 {
-    margin: 1rem; }
-  #activities h4 {
-    margin-bottom: 0.8rem;
-    font-size: 1rem; }
-  #activities img.smallBanner {
-    left: 40%; }
-  #formIntro h2 {
-    margin: 1rem; }
-  #formIntro h4 {
-    margin-bottom: 0.8rem;
-    font-size: 1rem; }
-  #contactForm {
-    padding: 0.5rem; }
-    #contactForm p {
-      font-size: 0.8em; }
-  #footer {
-    line-height: 1rem; } }
-
-/*end mediaq- 400- small screens------------------------------------------------
-------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Delius");@import url("https://fonts.googleapis.com/css?family=Amita");@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");body{font-family:"Raleway", sans-serif;}
+h2{font-family:"Raleway", sans-serif;font-style:normal;font-weight:600;color:#777;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);}
+#mainNav{background-color:rgba(63, 72, 75, 0.3);padding:0;}
+#mainNav img{transition:all ease-in 0.5s;}
+#mainNav img:hover{width:80px !important;height:80px !important;}
+.navbar-nav .nav-item{font-size:1.5rem;padding-right:15px;}
+.navbar-nav .nav-link{color:white;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);font-size:1.5rem;transition:all linear 0.2s;}
+.navbar-nav .nav-link:hover{background-color:rgba(63, 72, 75, 0.3);}
+.mainBack{background-color:rgba(63, 72, 75, 0.3);}
+#basicSlogan{background:url("../img/temp2.jpg") no-repeat;background-size:cover;background-attachment:fixed;min-height:750px;position:relative;}
+#basicSlogan .primary-overlay{background:rgba(0, 0, 0, 0.3);position:absolute;top:0;left:0;width:100%;height:100%;}
+#basicSlogan .slider-text{color:#fff;padding:12rem 0;margin-left:3.5rem;}
+#basicSlogan .slider-text h2.h2banner{font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:5.5rem;font-weight:700;line-height:5.5rem;border:1px solid #fff;padding:0.5rem;max-width:670px;margin:0 auto;color:#fff;}
+#basicSlogan .slider-text h2.h2banner span{color:#3d873f;}
+#basicSlogan .slider-text p{text-shadow:3px 3px 5px rgba(0, 0, 0, 0.9);letter-spacing:3px;font-size:2rem;font-weight:900;margin-top:1rem;line-height:2rem;}
+#smallButton{border:1px solid white;color:white;font-size:1.5em;}
+#about{background-color:white;box-shadow:-5.5px 9.5px 35px 0px rgba(63, 191, 63, 0.1);min-height:450px;}
+#about h2{margin:0.5rem;}
+#about .row{margin-top:3rem;}
+#about p{padding:0.5rem;}
+#telef{color:#fff;background:url("../img/telef.jpg");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;position:relative;min-height:350px;text-align:center;}
+#telef .secondOverlay{background-color:rgba(0, 0, 0, 0.7);position:absolute;top:0;left:0;width:100%;height:100%;}
+#telef p{font-size:1.5rem;font-family:'Playfair Display', serif;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);margin-top:8rem;}
+#facilities h2{margin-bottom:1.5rem;}
+#facilities h4{color:#777;margin-top:1rem 0;}
+#facilities p{padding-bottom:1rem;}
+#facilities .thumbnail{box-shadow:inset 0 0 5px #000000;}
+#facilities .thumbnail img{width:100%;height:100%;margin-bottom:0.8rem;}
+#tel2{color:#fff;background:url("../img/tria.jpeg");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;position:relative;min-height:350px;text-align:center;}
+#tel2 .secondOverlay{background-color:rgba(0, 0, 0, 0.7);position:absolute;top:0;left:0;width:100%;height:100%;}
+#tel2 p{font-size:1.5rem;font-family:'Playfair Display', serif;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);margin-top:8rem;}
+#services{color:#fff;background-color:#3d873f;}
+#services h2{color:inherit;padding:1.5rem 0;}
+#services h3{color:inherit;}
+#services .icon{font-size:2.7rem;margin-bottom:20px;}
+#services .item{padding:50px 30px;transition:all 0.3s;cursor:default;}
+#services .item:hover{background:#3d873f;box-shadow:-5.5px 9.5px 35px 0px rgba(0, 0, 0, 0.2);}
+#services .item p{font-weight:300;margin:20px 0;text-align:center;}
+#activities{}
+#activities h2{margin:2rem;}
+#activities h4{color:#777;margin-bottom:1.5rem;font-size:1.5rem;}
+#activities .flip{perspective:800px;}
+#activities .activitieGroup{display:block;position:relative;padding:0;width:640px;height:480px;}
+#activities .activitieGroup .actToFLip{display:block;height:100%;width:100%;transition:transform 1s;transform-style:preserve-3d;}
+#activities .activitieGroup .actToFLip:hover{transform:rotateY(-180deg);}
+#activities .activitieGroup img{backface-visibility:hidden;display:block;position:absolute;width:100%;height:100%;}
+#activities .activitieGroup .details{backface-visibility:hidden;border:3px double #3d873f;position:absolute;display:block;height:100%;width:100%;transform:rotateY(-180deg);}
+#activities .activitieGroup .details p{color:#3d873f;margin-top:6rem;font-style:normal;}
+#activities .activitieGroup .details p span{font-size:0.8em;font-style:italic;}
+img.smallBanner{width:60px !important;height:60px !important;left:45%;}
+#formIntro h2{margin:2rem;}
+#formIntro h4{color:#777;margin-bottom:1.5rem;font-size:1.5rem;}
+#outerForm{background:url("../img/imgForm1.jpg");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;}
+#contactForm{padding:2rem;}
+#contactForm p{color:white;text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);font-weight:500;}
+#footer p{color:#eeeeee;margin:0;}
+#footer{background:#222222;font-size:1rem;line-height:50px;}
+#footer p.social{text-align:left;padding-top:2rem;}
+#footer p.social a{border:1px solid #3d873f;border-radius:20px;color:#fff;display:inline-block;line-height:44px;margin-left:10px;vertical-align:middle;height:45px;width:45px;text-align:center;font-size:1.5rem;}
+.footIcon{background-color:#222222;}
+#template{color:#999999;margin:1.2rem;font-size:1rem;}
+#template a{color:#999999;}
+.social2{padding-top:2rem;text-align:right;}
+.slidedown{visibility:hidden;}
+.slide{animation-name:slide;animation-duration:1s;visibility:visible;}
+@keyframes slide{0%{opacity:0;transform:translateY(70%);}
+100%{opacity:1;transform:translateY(0%);}
+}
+@media (max-width:1450px){#activities .activitieGroup{width:440px;height:390px;}
+}
+@media (max-width:1190px){#activities .activitieGroup{width:440px;height:360px;}
+}
+@media (max-width:985px){#mainNav{background-color:rgba(63, 72, 75, 0.3);}
+#basicSlogan .slider-text{margin-left:0px;}
+#basicSlogan .slider-text h2.h2banner{font-size:4.5rem;max-width:530px;}
+#basicSlogan .slider-text p{font-size:2rem;}
+#about{min-height:250px;}
+#about h2{margin:0.2rem;font-size:2rem;}
+#about .row{margin-top:1.5rem;}
+#about p{padding:0.5rem;}
+#telef p, #tel2 p{margin-top:5rem;}
+#facilities{padding-top:1rem !important;}
+#facilities h2{margin-bottom:1rem;}
+#facilities h4{color:#777;margin-top:0.8rem;margin-bottom:0.8rem;font-size:1.5rem;}
+#facilities p{font-size:0.7rem;padding-bottom:0.5rem;}
+#activities h2{margin:1.5rem;}
+#activities h4{margin-bottom:1.5rem;font-size:1rem;}
+#formIntro h2{margin:1.5rem;}
+#formIntro h4{margin-bottom:1.5rem;font-size:1rem;}
+#contactForm{padding:0.7rem;}
+}
+@media (max-width:780px){#basicSlogan{background-attachment:scroll;}
+#activities .activitieGroup{width:440px;height:300px;}
+#footer p.social, #footer p.social2{text-align:center;margin-bottom:20px;}
+}
+@media (max-width:580px){#activities .activitieGroup{width:560px;height:360px;}
+#basicSlogan{min-height:45vh;}
+#basicSlogan .slider-text{padding:10rem 0;}
+#basicSlogan .slider-text h2.h2banner{font-size:3rem;max-width:400px;line-height:4rem;}
+#basicSlogan .slider-text p{font-size:1.5rem;}
+}
+@media (max-width:350px){#activities .activitieGroup{width:560px;height:300px;}
+}
+@media (max-width:400px){h2{font-size:1.2rem;text-shadow:none;}
+#mainNav{background-color:rgba(63, 72, 75, 0.3);}
+#basicSlogan{min-height:40vh;}
+#basicSlogan .slider-text{padding:7rem 0;}
+#basicSlogan .slider-text h2.h2banner{font-size:2rem;max-width:400px;line-height:3rem;}
+#basicSlogan .slider-text p{font-size:1.2rem;}
+a.nav-link{font-size:1.3rem !important;}
+#about{padding:1rem !important;}
+#about h2{margin:0.2rem;font-size:1.2rem;}
+#about .row{margin-top:1.5rem;}
+#about p{padding:0.2rem;font-size:1rem;}
+#telef p, #tel2 p{font-size:1.2rem;margin-top:1.5rem;margin-bottom:0.5rem;}
+#facilities{margin-top:0.5rem !important;padding:1rem !important;}
+#facilities h2{margin-bottom:0.5rem;}
+#facilities h4{font-size:1rem;margin-top:0.5rem;margin-bottom:1rem;color:#777;}
+#facilities p{font-size:0.8rem;padding-bottom:0.5rem;}
+#services h2{padding:1rem;}
+#services p.lead{font-size:1rem;}
+#services h3{font-size:1.2rem;}
+#activities h2{margin:1rem;}
+#activities h4{margin-bottom:0.8rem;font-size:1rem;}
+#activities img.smallBanner{left:40%;}
+#formIntro h2{margin:1rem;}
+#formIntro h4{margin-bottom:0.8rem;font-size:1rem;}
+#contactForm{padding:0.5rem;}
+#contactForm p{font-size:0.8em;}
+#footer{line-height:1rem;}
+}
