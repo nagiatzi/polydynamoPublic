@@ -101,9 +101,9 @@ $(document).ready(function(){
             'background-attachment':'fixed',
             'background-repeat':'no-repeat'});
          }); //function change 2
-
+      var userName = $("#name").val();
       $("#subB").on("click", function(){
-          var userName = $("#name").val();
+        console.log(userName);
         alert("Thank you " + userName + ", we will soon contact you, to answer your question. (or not because its just nagiatzi page ^_^) ");
       }) ;    //submit function
 
